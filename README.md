@@ -1,1 +1,5 @@
-# javaPractice
+DemoServlet是最简单的servlet；
+HelloSpring是关于IOC和AOP的例子；
+springboot-rabbitmq是springboot结合rabbitmq的案例；
+AsyncMailSend是redis实现email异步发送；
+DatatablesDemo-master是Dubbo的简单案例。

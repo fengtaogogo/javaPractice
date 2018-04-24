@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DubboDemo.iml" filepath="$PROJECT_DIR$/DubboDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../ModelProject/ModelProject.iml" filepath="$PROJECT_DIR$/../../ModelProject/ModelProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-api/dubbo-api.iml" filepath="$PROJECT_DIR$/dubbo-api/dubbo-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-consumer/dubbo-consumer.iml" filepath="$PROJECT_DIR$/dubbo-consumer/dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-consumer2/dubbo-consumer2.iml" filepath="$PROJECT_DIR$/dubbo-consumer2/dubbo-consumer2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" filepath="$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../ModelProject/xxx-app/xxx-app.iml" filepath="$PROJECT_DIR$/../../ModelProject/xxx-app/xxx-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../ModelProject/xxx-app2/xxx-app2.iml" filepath="$PROJECT_DIR$/../../ModelProject/xxx-app2/xxx-app2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../ModelProject/xxx-app3/xxx-app3.iml" filepath="$PROJECT_DIR$/../../ModelProject/xxx-app3/xxx-app3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../ModelProject/xxx-appgood/xxx-appgood.iml" filepath="$PROJECT_DIR$/../../ModelProject/xxx-appgood/xxx-appgood.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../ModelProject/xxx-core/xxx-core.iml" filepath="$PROJECT_DIR$/../../ModelProject/xxx-core/xxx-core.iml" />
+    </modules>
+  </component>
+</project>
