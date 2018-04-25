@@ -1,0 +1,538 @@
+2018-04-24 14:08:08,323 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:260] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-04-24 14:08:08,359 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:187] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6adede5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2d928643, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5025a98f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@49993335, org.springframework.test.context.transaction.TransactionalTestExecutionListener@20322d26, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@192b07fd]
+2018-04-24 14:08:08,499 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [application.xml]
+2018-04-24 14:08:08,712 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-config.xml]
+2018-04-24 14:08:08,767 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-redis.xml]
+2018-04-24 14:08:08,852 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-mongo.xml]
+2018-04-24 14:08:08,955 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-04-24 14:08:08,997 INFO[org.springframework.context.support.GenericApplicationContext:581] - Refreshing org.springframework.context.support.GenericApplicationContext@4bbfb90a: startup date [Tue Apr 24 14:08:08 CST 2018]; root of context hierarchy
+2018-04-24 14:08:09,154 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [db.properties]
+2018-04-24 14:08:09,159 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [redis.properties]
+2018-04-24 14:08:09,173 INFO[org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:155] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-24 14:08:09,461 INFO[com.alibaba.druid.pool.DruidDataSource:686] - {dataSource-1} inited
+2018-04-24 14:08:09,486 INFO[com.alibaba.druid.pool.DruidDataSource:686] - {dataSource-2} inited
+2018-04-24 14:08:10,168 WARN[org.springframework.data.mongodb.core.mapping.BasicMongoPersistentProperty:85] - Customizing field name for id property not allowed! Custom name will not be considered!
+2018-04-24 14:08:10,286 INFO[org.springframework.context.support.GenericApplicationContext:982] - Closing org.springframework.context.support.GenericApplicationContext@4bbfb90a: startup date [Tue Apr 24 14:08:08 CST 2018]; root of context hierarchy
+2018-04-24 14:08:10,294 INFO[com.alibaba.druid.pool.DruidDataSource:1401] - {dataSource-2} closed
+2018-04-24 14:08:10,295 INFO[com.alibaba.druid.pool.DruidDataSource:1401] - {dataSource-1} closed
+2018-04-24 15:02:59,752 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:260] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-04-24 15:02:59,778 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:187] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@56ef9176, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4566e5bd, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1ed4004b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ff5b51f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@25bbe1b6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5702b3b1]
+2018-04-24 15:02:59,871 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [application.xml]
+2018-04-24 15:02:59,962 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-config.xml]
+2018-04-24 15:03:00,011 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-redis.xml]
+2018-04-24 15:03:00,092 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-mongo.xml]
+2018-04-24 15:03:00,123 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-04-24 15:03:00,177 INFO[org.springframework.context.support.GenericApplicationContext:581] - Refreshing org.springframework.context.support.GenericApplicationContext@79be0360: startup date [Tue Apr 24 15:03:00 CST 2018]; root of context hierarchy
+2018-04-24 15:03:00,496 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [db.properties]
+2018-04-24 15:03:00,502 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [redis.properties]
+2018-04-24 15:03:00,516 INFO[org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:155] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-24 15:03:01,081 INFO[com.alibaba.druid.pool.DruidDataSource:686] - {dataSource-1} inited
+2018-04-24 15:03:01,130 INFO[com.alibaba.druid.pool.DruidDataSource:686] - {dataSource-2} inited
+2018-04-24 15:03:01,977 INFO[org.springframework.context.support.GenericApplicationContext:982] - Closing org.springframework.context.support.GenericApplicationContext@79be0360: startup date [Tue Apr 24 15:03:00 CST 2018]; root of context hierarchy
+2018-04-24 15:03:01,982 INFO[com.alibaba.druid.pool.DruidDataSource:1401] - {dataSource-2} closed
+2018-04-24 15:03:01,982 INFO[com.alibaba.druid.pool.DruidDataSource:1401] - {dataSource-1} closed
+2018-04-24 15:04:23,254 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:260] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-04-24 15:04:23,270 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:187] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@56ef9176, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4566e5bd, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1ed4004b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ff5b51f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@25bbe1b6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5702b3b1]
+2018-04-24 15:04:23,363 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [application.xml]
+2018-04-24 15:04:23,457 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-config.xml]
+2018-04-24 15:04:23,506 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-redis.xml]
+2018-04-24 15:04:23,585 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-mongo.xml]
+2018-04-24 15:04:23,632 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-04-24 15:04:23,676 INFO[org.springframework.context.support.GenericApplicationContext:581] - Refreshing org.springframework.context.support.GenericApplicationContext@79be0360: startup date [Tue Apr 24 15:04:23 CST 2018]; root of context hierarchy
+2018-04-24 15:04:23,957 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [db.properties]
+2018-04-24 15:04:23,963 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [redis.properties]
+2018-04-24 15:04:23,974 INFO[org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:155] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-24 15:04:24,327 INFO[com.alibaba.druid.pool.DruidDataSource:686] - {dataSource-1} inited
+2018-04-24 15:04:24,375 INFO[com.alibaba.druid.pool.DruidDataSource:686] - {dataSource-2} inited
+2018-04-24 15:04:25,137 INFO[org.springframework.context.support.GenericApplicationContext:982] - Closing org.springframework.context.support.GenericApplicationContext@79be0360: startup date [Tue Apr 24 15:04:23 CST 2018]; root of context hierarchy
+2018-04-24 15:04:25,142 INFO[com.alibaba.druid.pool.DruidDataSource:1401] - {dataSource-2} closed
+2018-04-24 15:04:25,143 INFO[com.alibaba.druid.pool.DruidDataSource:1401] - {dataSource-1} closed
+2018-04-24 15:09:22,661 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:260] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-04-24 15:09:22,676 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:187] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@56ef9176, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4566e5bd, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1ed4004b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ff5b51f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@25bbe1b6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5702b3b1]
+2018-04-24 15:09:22,771 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [application.xml]
+2018-04-24 15:09:22,865 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-config.xml]
+2018-04-24 15:09:22,914 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-redis.xml]
+2018-04-24 15:09:22,984 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-mongo.xml]
+2018-04-24 15:09:23,054 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-04-24 15:09:23,123 INFO[org.springframework.context.support.GenericApplicationContext:581] - Refreshing org.springframework.context.support.GenericApplicationContext@79be0360: startup date [Tue Apr 24 15:09:23 CST 2018]; root of context hierarchy
+2018-04-24 15:09:23,346 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [db.properties]
+2018-04-24 15:09:23,351 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [redis.properties]
+2018-04-24 15:09:23,374 INFO[org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:155] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-24 15:09:23,773 INFO[com.alibaba.druid.pool.DruidDataSource:686] - {dataSource-1} inited
+2018-04-24 15:09:23,798 INFO[com.alibaba.druid.pool.DruidDataSource:686] - {dataSource-2} inited
+2018-04-24 15:09:24,531 INFO[org.springframework.context.support.GenericApplicationContext:982] - Closing org.springframework.context.support.GenericApplicationContext@79be0360: startup date [Tue Apr 24 15:09:23 CST 2018]; root of context hierarchy
+2018-04-24 15:09:24,537 INFO[com.alibaba.druid.pool.DruidDataSource:1401] - {dataSource-2} closed
+2018-04-24 15:09:24,538 INFO[com.alibaba.druid.pool.DruidDataSource:1401] - {dataSource-1} closed
+2018-04-24 15:14:43,460 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:260] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-04-24 15:14:43,476 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:187] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4566e5bd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1ed4004b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@ff5b51f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25bbe1b6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5702b3b1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@69ea3742]
+2018-04-24 15:14:43,566 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [application.xml]
+2018-04-24 15:14:43,661 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-config.xml]
+2018-04-24 15:14:43,708 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-redis.xml]
+2018-04-24 15:14:43,778 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-mongo.xml]
+2018-04-24 15:14:43,822 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-04-24 15:14:43,875 INFO[org.springframework.context.support.GenericApplicationContext:581] - Refreshing org.springframework.context.support.GenericApplicationContext@22a67b4: startup date [Tue Apr 24 15:14:43 CST 2018]; root of context hierarchy
+2018-04-24 15:14:44,128 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [db.properties]
+2018-04-24 15:14:44,135 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [redis.properties]
+2018-04-24 15:14:44,148 INFO[org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:155] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-24 15:14:44,523 INFO[com.alibaba.druid.pool.DruidDataSource:686] - {dataSource-1} inited
+2018-04-24 15:14:44,556 INFO[com.alibaba.druid.pool.DruidDataSource:686] - {dataSource-2} inited
+2018-04-24 15:14:47,357 ERROR[com.alibaba.druid.pool.DruidDataSource:1936] - create connection error, url: jdbc:mysql://localhost:3306/datasource2?useUnicode=true&characterEncoding=UTF-8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1386)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1440)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1934)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 23 more
+2018-04-24 15:14:49,377 ERROR[com.alibaba.druid.pool.DruidDataSource:1936] - create connection error, url: jdbc:mysql://localhost:3306/datasource2?useUnicode=true&characterEncoding=UTF-8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1386)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1440)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1934)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 23 more
+2018-04-24 15:14:51,388 ERROR[com.alibaba.druid.pool.DruidDataSource:1936] - create connection error, url: jdbc:mysql://localhost:3306/datasource2?useUnicode=true&characterEncoding=UTF-8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1386)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1440)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1934)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 23 more
+2018-04-24 15:14:53,407 ERROR[com.alibaba.druid.pool.DruidDataSource:1936] - create connection error, url: jdbc:mysql://localhost:3306/datasource2?useUnicode=true&characterEncoding=UTF-8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1386)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1440)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1934)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 23 more
+2018-04-24 15:14:55,412 ERROR[com.alibaba.druid.pool.DruidDataSource:1936] - create connection error, url: jdbc:mysql://localhost:3306/datasource2?useUnicode=true&characterEncoding=UTF-8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1386)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1440)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1934)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 23 more
+2018-04-24 15:14:57,422 ERROR[com.alibaba.druid.pool.DruidDataSource:1936] - create connection error, url: jdbc:mysql://localhost:3306/datasource2?useUnicode=true&characterEncoding=UTF-8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1386)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1440)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1934)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 23 more
+2018-04-24 15:14:59,432 ERROR[com.alibaba.druid.pool.DruidDataSource:1936] - create connection error, url: jdbc:mysql://localhost:3306/datasource2?useUnicode=true&characterEncoding=UTF-8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1386)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1440)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1934)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 23 more
+2018-04-24 15:15:01,438 ERROR[com.alibaba.druid.pool.DruidDataSource:1936] - create connection error, url: jdbc:mysql://localhost:3306/datasource2?useUnicode=true&characterEncoding=UTF-8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1386)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1440)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1934)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 23 more
+2018-04-24 15:15:03,444 ERROR[com.alibaba.druid.pool.DruidDataSource:1936] - create connection error, url: jdbc:mysql://localhost:3306/datasource2?useUnicode=true&characterEncoding=UTF-8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1386)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1440)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1934)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 23 more
+2018-04-24 15:15:05,455 ERROR[com.alibaba.druid.pool.DruidDataSource:1936] - create connection error, url: jdbc:mysql://localhost:3306/datasource2?useUnicode=true&characterEncoding=UTF-8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1386)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1440)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1934)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 23 more
