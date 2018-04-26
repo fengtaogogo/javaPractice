@@ -15,10 +15,11 @@
 			select 
 			 <include refid="Base_Column_List" />
 			from user_t 
-			where
-		age between #{minAge,jdbcType=INTEGER} and #{maxAge,jdbcType=INTEGER}
-		<if test="name!=null">and user_name like CONCAT('%',#{name,jdbcType=VARCHAR},'%')</if>
-		<if test="password!=null">and password like CONCAT('%',#{password,jdbcType=VARCHAR},'%')</if>
+			where 1=1
+        <if test="minAge!=null and minAge!=''">and age <![CDATA[>]]> #{minAge,jdbcType=INTEGER}</if>
+        <if test="maxAge!=null and maxAge!=''">and age <![CDATA[<]]> #{maxAge,jdbcType=INTEGER}</if>
+		<if test="name!=null and name!=''">and user_name like CONCAT('%',#{name,jdbcType=VARCHAR},'%')</if>
+		<if test="password!=null and password!=''">and password like CONCAT('%',#{password,jdbcType=VARCHAR},'%')</if>
   </select>
 
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >

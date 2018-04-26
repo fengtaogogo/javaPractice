@@ -75,7 +75,7 @@ public class UserController
 		
 		this.userService.updateByPrimaryKey(user);
 		
-		return "forward:queryUser";
+		return "showUser";
 		
 	}
     

@@ -17,8 +17,8 @@
   </tr>
   <tr>
   	<td><input type="text" name="name"/> </td>
-  	<td><input type="text" name="minAge" required="required"/></td>
-  	<td><input type="text" name="maxAge" required="required"/></td>
+  	<td><input type="text" name="minAge"/></td>
+  	<td><input type="text" name="maxAge"/></td>
   	<td><input type="text" name="password"/></td>
   </tr></table>
   <input type="submit" value="模糊查询"/>

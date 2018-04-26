@@ -6,5 +6,6 @@
   </head>
   <body>
     ${user.userName}
+    <td><a href="${pageContext.request.contextPath }/searchUsers.jsp">select</a></td>
   </body>
 </html>
