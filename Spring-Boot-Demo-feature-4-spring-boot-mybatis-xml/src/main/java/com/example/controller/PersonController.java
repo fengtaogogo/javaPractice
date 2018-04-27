@@ -25,7 +25,7 @@ public class PersonController {
     @RequestMapping("/save")
     public Integer save() {
         PersonDO personDO = new PersonDO();
-        personDO.setName("张三");
+        personDO.setName("wind");
         personDO.setAge(18);
         personService.insert(personDO);
         return personDO.getId();
@@ -34,8 +34,8 @@ public class PersonController {
     @RequestMapping("/update")
     public Long update() {
         PersonDO personDO = new PersonDO();
-        personDO.setId(3);
-        personDO.setName("旺旺");
+        personDO.setId(1);
+        personDO.setName("tao");
         personDO.setAge(12);
         return personService.update(personDO);
     }
