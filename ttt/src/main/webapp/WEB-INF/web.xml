@@ -32,7 +32,7 @@
 		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
 	</listener>
 
-	<!-- Spring MVC servlet -->
+	<!-- web应用的总入口，也可以说是中央处理器，就是通过它，一步一步的启动Spring容器的。-->
 	<servlet>
 		<servlet-name>SpringMVC</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -49,7 +49,7 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
-		<welcome-file>/index.jsp</welcome-file>
+		<welcome-file>/searchUsers.jsp</welcome-file>
 	</welcome-file-list>
 	<!-- 配置SESSION超时，单位是分钟 -->
 	<session-config>
