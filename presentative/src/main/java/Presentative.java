@@ -136,7 +136,7 @@ public class Presentative {
         String password="123456";
         String driver="org.postgresql.Driver";
         //其中tenant_1008201为数据库名称
-        String url="jdbc:postgresql://172.16.0.140:5432/tenant_1008201";
+        String url="jdbc:postgresql://***/***";
         Connection conn=null;
         try{
             Class.forName(driver);
