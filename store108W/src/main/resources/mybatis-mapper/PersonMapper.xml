@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.mapper.PersonMapper">
+
+    <select id="selectYewuyuans" resultType="java.util.HashMap">
+        -- 业务员的成员id和业务的营销组织
+        SELECT po.orgstructid,pu.userinfoname,pu.orgstructid as saleareaid,po6.orgname from  pl_orgstruct po
+
+                LEFT JOIN pl_userinfo pu on pu.userinfoid=po.userinfoid
+                LEFT JOIN pl_orgstruct po6 on pu.orgstructid=po6.orgstructid
+                WHERE  po.orgname like '%业代%' and pu.status=1
+    </select>
+
+    <select id="selectstoretype" resultType="java.util.HashMap">
+        -- 查询所有的终端类型
+         SELECT pd0.dickey,pd0.dicvalue from pl_dictionary pd0  WHERE pd0.dictionarycode='893269583996260403' and EXISTS(SELECT
+        pd1.dickey from pl_dictionary pd1
+        WHERE pd1.dictionarycode='893269583996260404' and pd0.parentdickey=pd1.dickey and pd1.status=1) and pd0.status=1
+    </select>
+
+    <select id="selectchanneltype" resultType="java.util.HashMap">
+        -- 查询渠道类型
+        SELECT pd1.dickey,pd1.dicvalue from pl_dictionary pd1
+        LEFT JOIN pl_dictionary pd2 on pd2.parentdickey=pd1.dickey
+        WHERE pd1.dictionarycode='893269583996260404' and pd2.dickey=#{stType} and pd1.status=1
+    </select>
+
+    <select id="selectstorelevel" resultType="java.util.HashMap">
+        -- 查询所有的终端级别
+        SELECT dickey,dicvalue from pl_dictionary WHERE dictionarycode='893293206815510625' and status=1
+    </select>
+
+    <select id="selectbrands" resultType="java.util.HashMap">
+        -- 查询所有的品牌
+        SELECT '[{
+                 "isselected" : "0",
+                 "id" : "'||dickey||'",
+                 "key" : "'||dickey||'",
+                 "status" : "1" }]' as brandJson,dicvalue from pl_dictionary WHERE dictionarycode='893288512944738381' and status=1
+    </select>
+
+    <select id="selectcategories" resultType="java.util.HashMap">
+        -- 查询所有的品类
+        SELECT dickey,dicvalue from pl_dictionary WHERE dictionarycode='893288512944738380'and status=1
+    </select>
+
+    <insert id="insertStores" parameterType="java.util.HashMap">
+        INSERT INTO kx_kq_store (id,seleareaid,storetype,channeltype,storelevel,
+                                 regionid,contactphone,contactname,address,storename,customertype,
+                                 status,createop,createtime,updateop,updatetime,storecode,longitude,latitude,supplier,
+                                 brand,category)
+        VALUES (#{id},#{saleareaid},#{storetype},#{channeltype},#{storelevel},
+                #{regionid},#{contactphone},#{contactname},#{address},#{storename},#{customertype},#{status}
+                ,#{createop},#{createtime},#{updateop},#{updatetime},#{storecode},#{longitude},#{latitude},
+                #{supplier},#{brand},#{category});
+    </insert>
+
+    <insert id="insertCustomers" parameterType="java.util.HashMap">
+        INSERT INTO kx_customer(id,customercode,customername,saleareaid,status,
+        customertype,createop,createtime,updateop,updatetime)
+        VALUES (#{id},#{customercode},#{customername},#{saleareaid},#{status},
+        #{customertype},#{createop},#{createtime},#{updateop},#{updatetime});
+    </insert>
+
+    <insert id="insertRepresentatives" parameterType="java.util.HashMap">
+        INSERT INTO kx_kq_storerepresentative (id,storeid,representativeid,isdefault)
+        VALUES (#{id},#{storeid},#{representativeid},#{isdefault});
+    </insert>
+
+    <select id="selectchannels" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+        -- 查询渠道
+        SELECT channel.id,channel.channelname from ka_kq_channelcustomers channel
+           LEFT JOIN pl_orgstruct po on channel.saleareaid=po.parentorgstructid
+           WHERE po.orgstructid=#{orgid} and channel.status=1
+    </select>
+
+    <insert id="insertStoresupplier" parameterType="java.util.HashMap">
+        INSERT INTO kx_kq_storesupplier (storeid,supplierid,id,isdefault)
+        VALUES (#{storeid},#{supplierid},#{id},#{isdefault});
+    </insert>
+
+    <select id="selectPresentatives" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+        SELECT pu.sex as userinfoid__sex,pu.userinfoid,po.codepath,po3.orgstructid as parentorgstructid__parentorgstructid,po.parentorgstructid,
+                po3.orgname as parentorgstructid__parentorgstructid__orgname,po.orgname||'('||po3.orgname||','||po2.orgname||')' as orgname,
+              pu.phonenumber as userinfoid__phonenumber,po.orgtypeid as orgtypeid,po.orgname||'('||po3.orgname||','||po2.orgname||')' as text,
+                  ksr.isdefault,po.orgstructid,po2.orgname as parentorgstructid__orgname,po.seq,po.orgstructid as key,posal.orgname as salearaname,
+                  pu.jobnumber as userinfoid__jobnumber,po2.orgname as positionname,po.orgstructtypeid,pu.email as userinfoid__email,po.fullname,pu.accountcode,
+                 pu.userinfoname as membername,pu.status
+                FROM kx_kq_storerepresentative ksr
+                LEFT JOIN kx_kq_store ks on ksr.storeid=ks.id
+                LEFT JOIN pl_orgstruct po on ksr.representativeid=po.orgstructid
+               LEFT JOIN pl_orgstruct po2 on po.parentorgstructid=po2.orgstructid
+               LEFT JOIN pl_orgstruct po3 on po2.parentorgstructid=po3.orgstructid
+                LEFT JOIN pl_orgstruct posal on ks.seleareaid=posal.orgstructid
+                LEFT JOIN pl_userinfo pu on po.userinfoid=pu.userinfoid
+                WHERE
+               ks.id =#{id}
+    </select>
+
+    <update id="updatePresentatives" parameterType="java.util.HashMap">
+        update kx_kq_store set presentative=#{presentative} WHERE id=#{id}
+    </update>
+
+</mapper>
