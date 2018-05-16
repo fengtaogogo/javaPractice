@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
 
 /**
  * 数据收集配置，主要作用在于Spring启动时自动加载一个ExecutorService对象.
- * @author Bruce
+ * @author tao
  * @date 2017/2/22
  *
  * update by Cliff at 2027/11/03
@@ -21,6 +21,6 @@ public class ThreadPoolConfig {
 
     @Bean
     public ExecutorService getThreadPool(){
-        return Executors.newFixedThreadPool(20);
+        return Executors.newFixedThreadPool(10);
     }
 }

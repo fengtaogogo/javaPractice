@@ -35,6 +35,10 @@ public interface PersonMapper {
 
     void insertStoresupplier(HashMap storesupplierMap);
 
+    void insertStorebrand(HashMap brand);
+
+    void insertcategory(HashMap category);
+
     List<Map<String,Object>> selectPresentatives(HashMap paramMapstoreId);
 
     void updatePresentatives(HashMap paramMappresentatives);

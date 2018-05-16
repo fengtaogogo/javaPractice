@@ -19,7 +19,7 @@ import java.util.concurrent.Executors;
  * Created by FlySheep on 17/3/25.
  */
 @RestController
-public class PersonController {
+public class StoresController {
 
     @Autowired
     private PersonMapper personMapper;
@@ -27,8 +27,8 @@ public class PersonController {
     @Autowired
     private ExecutorService executorService;
 
-    @RequestMapping("/selectYewuyuans")
-    public void selectYewuyuans() {
+    @RequestMapping("/108wstores")
+    public void insertStores() {
 
         //终端类型
         List<Map<String,Object>> storetype=personMapper.selectstoretype();
@@ -42,16 +42,14 @@ public class PersonController {
         List<Map<String,Object>> categories=personMapper.selectcategories();
         //        行政区域
         int [] regionid = {440103,440104,440105,440106,440111,440112,440113,440114};
-
+//生成18位不重复数字
         IDUtil idWorker = new IDUtil(0, 0);
 
         for (int i = 0; i < 10; i++) {
 //            Thread t = new Thread(new HandlerService(i,2,Yewuyuans,storetype,storelevel,regionid));
 //            t.start();
-            executorService.execute(new HandlerService(i,2,Yewuyuans,storetype,storelevel,
+            executorService.execute(new HandlerService(i,270,Yewuyuans,storetype,storelevel,
                     regionid,personMapper,idWorker,brands,categories));
         }
-
-
     }
 }

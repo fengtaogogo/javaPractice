@@ -39,7 +39,7 @@
                  "isselected" : "0",
                  "id" : "'||dickey||'",
                  "key" : "'||dickey||'",
-                 "status" : "1" }]' as brandJson,dicvalue from pl_dictionary WHERE dictionarycode='893288512944738381' and status=1
+                 "status" : "1" }]' as brandJson,dicvalue,dickey from pl_dictionary WHERE dictionarycode='893288512944738381' and status=1
     </select>
 
     <select id="selectcategories" resultType="java.util.HashMap">
@@ -80,6 +80,16 @@
     <insert id="insertStoresupplier" parameterType="java.util.HashMap">
         INSERT INTO kx_kq_storesupplier (storeid,supplierid,id,isdefault)
         VALUES (#{storeid},#{supplierid},#{id},#{isdefault});
+    </insert>
+
+    <insert id="insertStorebrand" parameterType="java.util.HashMap">
+        INSERT INTO kx_kq_storebrand (storeid,brandid,id,isdefault)
+        VALUES (#{storeid},#{brandid},#{id},#{isdefault});
+    </insert>
+
+    <insert id="insertcategory" parameterType="java.util.HashMap">
+        INSERT INTO kx_kq_storecategory (storeid,categoryid,id,isdefault)
+        VALUES (#{storeid},#{categoryid},#{id},#{isdefault});
     </insert>
 
     <select id="selectPresentatives" parameterType="java.util.HashMap" resultType="java.util.HashMap">

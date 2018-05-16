@@ -1,2 +1,8 @@
-# Spring-Boot-Demo
-Spring Boot Demo
+该工程插入的表为：
+kx_kq_store
+kx_customer
+kx_kq_storesupplier
+kx_kq_storerepresentative
+kx_kq_storebrand
+kx_kq_storecategory
+

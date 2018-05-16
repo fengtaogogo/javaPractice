@@ -21,8 +21,8 @@ import java.util.*;
 public class HandlerService implements Runnable{
     private IDUtil idWorker;
     private PersonMapper personMapper;
-    private int num;
-    private int PersonSize;
+    private int num;//线程次数
+    private int PersonSize;//每个线程处理业代数
     private List<Map<String,Object>> Yewuyuans;
     private List<Map<String,Object>> storetype;
     private List<Map<String,Object>> storelevel;
@@ -61,34 +61,36 @@ public class HandlerService implements Runnable{
             //随机取终端类型
             BigInteger stType =new BigInteger(storetype.get(new Random().nextInt(storetype.size())).get("dickey")+"");
             //随机取品牌
-            String bran =brands.get(new Random().nextInt(brands.size())).get("brandjson").toString();
+            Map brandsMap=brands.get(new Random().nextInt(brands.size()));
+            String bran =brandsMap.get("brandjson").toString();
+            BigInteger brandid=new BigInteger(brandsMap.get("dickey").toString());
             //随机取品类1
             BigInteger category1 =new BigInteger(categories.get(new Random().nextInt(categories.size())).get("dickey")+"");
             //随机取品类2
             BigInteger category2 =new BigInteger(categories.get(new Random().nextInt(categories.size())).get("dickey")+"");
             //        渠道类型根据终端类型反求，注意
             List<Map<String,Object>> channeltype=personMapper.selectchanneltype(stType);
-
             BigInteger chanType =new BigInteger(channeltype.get(new Random().nextInt(channeltype.size())).get("dickey")+"");
             BigInteger stLevel =new BigInteger(storelevel.get(new Random().nextInt(storelevel.size())).get("dickey")+"");
             int regId = regionid[(int)(Math.random()*(regionid.length))];
             BigInteger custoType =new BigInteger("905324680615956480");
 
-            //根据营销组织查渠道：取的是业务员营销组织上一级的渠道
+            //根据营销组织查渠道：取的是业务员营销组织上一级的渠道供货商
             BigInteger orgid=new BigInteger(Yewuyuans.get(j).get("saleareaid").toString());
             List<Map<String,Object>> channels = personMapper.selectchannels(orgid);
-
+//随机取两个不同数用于随机生成渠道供货商
             int[] reult = randomCommon(0,channels.size(),2);
-
+//循环插入终端及其关联信息
             for (int i = 0; i < 400; i++) {
 //              广东省经度：109.75-117.333333、纬度：20.15-25.516667
                 DecimalFormat df = new DecimalFormat( "0.000000 ");
                 //随机生成经纬度
-                double lon =Double.parseDouble(df.format(Double.parseDouble(randomLonLat(109.75,117.333333))));
-                double lat =Double.parseDouble(df.format(Double.parseDouble(randomLonLat(20.15,25.516667))));
+                double lon =Double.parseDouble(df.format(Double.parseDouble(randomLonLat(109.750000,117.333333))));
+                double lat =Double.parseDouble(df.format(Double.parseDouble(randomLonLat(20.150000,25.516667))));
                 String address="{\"address\":\"广东省\",\"latitude\":\""+lat+"\",\"longitude\":\""+lon+"\"}";
 //分布式生成18位不重复数字ID-终端id
                 Long storeId=idWorker.nextId();
+                //品类json拼装生成
                 JSONArray jsonCategory = new JSONArray();
                 HashMap CategoryrMap = new HashMap();
                 CategoryrMap.put("isselected",0+"");
@@ -98,6 +100,15 @@ public class HandlerService implements Runnable{
                 String mapStringCate = JSON.toJSONString(CategoryrMap, SerializerFeature.WriteMapNullValue,SerializerFeature.WriteNullStringAsEmpty);
                 JSONObject joCate = JSON.parseObject(mapStringCate);
                 jsonCategory.add(joCate);
+
+                HashMap storeCategoryMap21 = new HashMap();
+                storeCategoryMap21.put("storeid",storeId);
+                storeCategoryMap21.put("categoryid",category1);
+                storeCategoryMap21.put("id",idWorker.nextId());
+                storeCategoryMap21.put("isdefault",0);
+                personMapper.insertcategory(storeCategoryMap21);
+
+
                 if(category1!=category2){
                     HashMap CategoryrMap2 = new HashMap();
                     CategoryrMap2.put("isselected",0+"");
@@ -107,9 +118,15 @@ public class HandlerService implements Runnable{
                     String mapStringCate2 = JSON.toJSONString(CategoryrMap2, SerializerFeature.WriteMapNullValue,SerializerFeature.WriteNullStringAsEmpty);
                     JSONObject joCate2 = JSON.parseObject(mapStringCate2);
                     jsonCategory.add(joCate2);
+
+                    HashMap storeCategoryMap22 = new HashMap();
+                    storeCategoryMap22.put("storeid",storeId);
+                    storeCategoryMap22.put("categoryid",category2);
+                    storeCategoryMap22.put("id",idWorker.nextId());
+                    storeCategoryMap22.put("isdefault",0);
+                    personMapper.insertcategory(storeCategoryMap22);
                 }
 
-                JSONArray json = new JSONArray();
 //渠道终端关联表
                 HashMap storesupplierMap21 = new HashMap();
                 storesupplierMap21.put("storeid",storeId);
@@ -125,6 +142,7 @@ public class HandlerService implements Runnable{
                 storesupplierMap22.put("isdefault",0);
                 personMapper.insertStoresupplier(storesupplierMap22);
 //供货商字段拼装
+                JSONArray json = new JSONArray();
                 Map<String,String> jo = new HashMap();
                 jo.put("id", channels.get(reult[0]).get("id").toString());
                 jo.put("text", channels.get(reult[0]).get("channelname").toString());
@@ -134,7 +152,6 @@ public class HandlerService implements Runnable{
                 String mapString = JSON.toJSONString(jo, SerializerFeature.WriteMapNullValue,SerializerFeature.WriteNullStringAsEmpty);
                 JSONObject jo2 = JSON.parseObject(mapString);
                 json.add(jo2);
-
                 Map<String,String> jotwo = new HashMap();
                 jotwo.put("id", channels.get(reult[1]).get("id").toString());
                 jotwo.put("text", channels.get(reult[1]).get("channelname").toString());
@@ -146,7 +163,7 @@ public class HandlerService implements Runnable{
                 json.add(jo2two);
 
 //                String custoCode = UUID.randomUUID().toString().replaceAll("-", "");
-                String custoCode ="ZD"+j+"000"+i;
+                String custoCode ="ZD"+j+"000"+i;//终端编码
 //插入终端表
                 HashMap paramMap = new HashMap();
                 paramMap.put("id",storeId);
@@ -191,8 +208,15 @@ public class HandlerService implements Runnable{
                 paramMapRepresentative.put("storeid",storeId);
                 paramMapRepresentative.put("representativeid",Yewuyuans.get(j).get("orgstructid"));
                 paramMapRepresentative.put("isdefault",1);
-
                 personMapper.insertRepresentatives(paramMapRepresentative);
+//品牌
+                HashMap paramMapbrand = new HashMap();
+                paramMapbrand.put("id",idWorker.nextId());
+                paramMapbrand.put("storeid",storeId);
+                paramMapbrand.put("brandid",brandid);
+                paramMapbrand.put("isdefault",0);
+                personMapper.insertStorebrand(paramMapbrand);
+
                 //生成终端的负责人字段
                 HashMap paramMapstoreId = new HashMap();
                 paramMapstoreId.put("id",storeId);
@@ -224,7 +248,6 @@ public class HandlerService implements Runnable{
                 jopresentatives.put("status", getMapValue(presentatives.get(0),"status"));
 //如果value为null，将其置为""
                 for(String s:jopresentatives.keySet()){
-
                     if(null==jopresentatives.get(s)){
                         jopresentatives.put(s,"");
                     }
@@ -241,13 +264,18 @@ public class HandlerService implements Runnable{
                 personMapper.updatePresentatives(paramMappresentatives);
             }
         }
+
         long endtime=System.currentTimeMillis();
         System.out.println("结束时间记录："+df2.format(new Date()));
-        System.out.println("时间消耗："+(endtime-starttime));
+        long l=endtime-starttime;
+        long day=l/(24*60*60*1000);
+        long hour=(l/(60*60*1000)-day*24);
+        long min=((l/(60*1000))-day*24*60-hour*60);
+        long s=(l/1000-day*24*60*60-hour*60*60-min*60);
+        System.out.println("单个线程耗时："+day+"天"+hour+"小时"+min+"分"+s+"秒");
     }
 
-
-//检查map的key是否为空
+    //检查map的key是否为空
     public static String getMapValue(Map map,String key) {
         if(map.containsKey(key)){
             return String.valueOf(map.get(key));
@@ -283,7 +311,6 @@ public class HandlerService implements Runnable{
         Random random = new Random();
         BigDecimal db = new BigDecimal(Math.random() * (MaxLon - MinLon) + MinLon);
         String lonOrlat = db.setScale(6, BigDecimal.ROUND_HALF_UP).toString();// 小数后6位
-
         return lonOrlat;
     }
 
@@ -316,6 +343,6 @@ public class HandlerService implements Runnable{
         }
         return result;
     }
-
-
 }
+
+
